@@ -55,7 +55,7 @@ conda install pytorch=1.3.1 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkg
   
 * A3D-SATr weights
    * [Google Drive]
-   * [百度网盘]
+   * [百度网盘](https://pan.baidu.com/s/1FrpDP1ZLSsd8lWNvNQcDMQ) (w0lt)
 
 
 
