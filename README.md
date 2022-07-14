@@ -25,7 +25,7 @@ numpy==1.18.5, pandas==0.25.3, scikit-learn==0.22.2, Pillow==8.0.1, fire, scikit
 Higher (or lower) pytorch versions should NOT work and the torch1.3.1 are not avaliable in the offical website. This is BUG from AD3 work.
 You can Use NEW URL channels, 
 1. Add the tsinghua URL channels to you conda permanently
-'''
+```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
@@ -34,11 +34,11 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/m
 conda config --set show_channel_urls yes
 
 conda install pytorch=1.3.1 
-'''
+```
 2. Add the tsinghua URL channels to you conda temporary
-'''
+```
 conda install pytorch=1.3.1 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-'''
+```
 
 ## How to run the experiments
 
