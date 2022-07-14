@@ -54,7 +54,7 @@ conda install pytorch=1.3.1 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkg
   * Specify data root in [./deeplesion/ENVIRON.py](./deeplesion/ENVIRON.py)
   
 * A3D-SATr weights
-   * [Google Drive]
+   * [Google Drive](https://drive.google.com/file/d/1jVTkwmE9HCTGmRjmTAuY6BhGRkHORddf/view?usp=sharing)
    * [百度网盘](https://pan.baidu.com/s/1FrpDP1ZLSsd8lWNvNQcDMQ) (w0lt)
  Suggest weight location
  ```
