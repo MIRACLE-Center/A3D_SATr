@@ -23,3 +23,40 @@ Python 3 (>=3.6)
 PyTorch==1.3.1
 numpy==1.18.5, pandas==0.25.3, scikit-learn==0.22.2, Pillow==8.0.1, fire, scikit-image
 Higher (or lower) versions should also work (perhaps with minor modifications).
+
+
+## How to run the experiments
+
+* Dataset
+
+  * Download [DeepLesion dataset](https://nihcc.box.com/v/DeepLesion)
+  * Before training, mask should be generated from bounding box and recists. [mask generation](./deeplesion/dataset/generate_mask_with_grabcut.md)
+
+* Preparing mmdetection script
+
+  * Specify input ct slices in [./deeplesion/mconfigs/densenet_align.py](./deeplesion/mconfigs/densenet_align.py) through modifing NUM_SLICES in dict dataset_transform
+  
+  * Specify data root in [./deeplesion/ENVIRON.py](./deeplesion/ENVIRON.py)
+  
+* Model weights
+  Our trained weights available on: 
+   * [Google Drive]
+   * [百度网盘]
+   * [ ] [TODO] A3D models are coming soon!
+
+
+* Training
+
+
+ * Evaluation 
+
+
+## Citation
+bib:
+
+    @article{li2022satr,
+    title={SATr: Slice Attention with Transformer for Universal Lesion Detection},
+    author={Li, Han and Chen, Long and Han, Hu and Zhou, S Kevin},
+    journal={arXiv preprint arXiv:2203.07373},
+    year={2022}
+    }
