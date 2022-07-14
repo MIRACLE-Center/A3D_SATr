@@ -12,7 +12,7 @@ dataset_transform = dict(
     GROUNP_ZSAPACING = False,
 )
 
-backbone_manner=2#0 a3d 1: trans_a3d 2: Patch_trans_a3d
+backbone_manner=1#0 a3d 1: trans_a3d 2: Patch_trans_a3d
 BM_default=0
 RPN_head_decoupled=0
 Unet_FPN_default=0
