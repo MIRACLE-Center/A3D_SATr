@@ -38,11 +38,10 @@ Higher (or lower) versions should also work (perhaps with minor modifications).
   
   * Specify data root in [./deeplesion/ENVIRON.py](./deeplesion/ENVIRON.py)
   
-* Model weights
-  Our trained weights available on: 
+* A3D-SATr weights
    * [Google Drive]
    * [百度网盘]
-   * [ ] [TODO] A3D models are coming soon!
+
 
 
 * Training
