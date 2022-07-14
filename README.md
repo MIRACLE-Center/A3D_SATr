@@ -60,11 +60,21 @@ conda install pytorch=1.3.1 -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkg
 
 
 * Training
-
-
- * Evaluation 
-
-
+```
+CUDA_VISIBLE_DEVICES=0 python -W ignore -m torch.distributed.launch  --nproc_per_node={num of GPUs} --master_addr 127.0.0.2 --master_port 2607 {train_dist files} {configs files} --launcher pytorch
+```
+e.g.
+```
+CUDA_VISIBLE_DEVICES=2 python -W ignore -m torch.distributed.launch  --nproc_per_node=1 --master_addr 127.0.0.2 --master_port 2607 deeplesion/train_dist.py deeplesion/mconfigs/densenet_a3d.py --launcher pytorch
+```
+* Test 
+```
+CUDA_VISIBLE_DEVICES=0 python eval.py --config {configs files} --checkpoint {checkpoint files}
+```
+e.g.
+```
+CUDA_VISIBLE_DEVICES=0 python eval.py --config /deeplesion/mconfigs/densenet_a3d.py --checkpoint /deeplesion/work_dirs/densenet_3d_trans_a3d_r2/epoch_19.pth
+```
 ## Citation
 bib:
 
